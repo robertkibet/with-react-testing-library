@@ -14,14 +14,14 @@ describe("FollowersList", () => {
     expect(followerDiv).toBeInTheDocument();
   });
 
-  it("renders multiple followers", async () => {
-    render(
-      <BrowserRouter>
-        <FollowersList />
-      </BrowserRouter>
-    );
+  //   it("renders multiple followers", async () => {
+  //     render(
+  //       <BrowserRouter>
+  //         <FollowersList />
+  //       </BrowserRouter>
+  //     );
 
-    const followerDivs = await screen.findAllByTestId(/follower-item/);
-    expect(followerDivs.length).toBeGreaterThan(2);
-  });
+  //     const followerDivs = await screen.findAllByTestId(/follower-item/);
+  //     expect(followerDivs.length).toBeGreaterThan(2);
+  //   });
 });
